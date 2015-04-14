@@ -1,0 +1,18 @@
+<ion-view view-title="Graphs">
+  <!--<div class="navigation" style="top: calc({{headBarHeight}}px + 20px); width:{{sideBarHeight}}px; left:calc(100% - {{sideBarHeight}}px)">-->
+  <div class="navigation" style="top: calc({{headBarHeight}}px + 20px); left:calc(100% - {{sideBarHeight}}px)">
+    <ul>
+      <li data-graph-slide="1" ng-click="scrollMe('slide1')" class="slide1">Bump</li>
+      <li data-graph-slide="2" ng-click="scrollMe('slide2')" class="slide2">Weight</li>
+      <li data-graph-slide="3" ng-click="scrollMe('slide3')" class="slide3">Happiness</li>
+      <li data-graph-slide="4" ng-click="scrollMe('slide4')" class="slide4">Kicks</li>
+    </ul>
+    <canvas piechart class="side_bar" data="pieData"></canvas>
+  </div>
+  <ion-content scroll="true" direction="y" overflow-scroll="false" >
+    <canvas id="slide1" class="slide" chart="Line" options="myChartOptions" data="lineChart" style="width: calc(100% - {{sideBarHeight}}px); height: 100%"></canvas><br/>
+    <canvas id="slide2" class="slide" chart="Line" options="myChartOptions" data="lineChart" style="width: calc(100% - {{sideBarHeight}}px); height: 100%"></canvas><br/>
+    <canvas id="slide3" class="slide" chart="Line" options="myChartOptions" data="scatterChart" style="width: calc(100% - {{sideBarHeight}}px); height: 100%"></canvas><br/>
+    <canvas id="slide4" class="slide" chart="Bar" options="myChartOptions" data="lineChart" style="width: calc(100% - {{sideBarHeight}}px); height: 100%"></canvas>
+  </ion-content>
+</ion-view>

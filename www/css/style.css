@@ -1,0 +1,37 @@
+/* Empty. Add your own CSS if you like */
+.navigation {
+  position: fixed;
+  z-index: 1;
+  display: block
+}
+
+.navigation li {
+    color:#333333;
+    display:block;
+    padding: 0 10px;
+    line-height:30px;
+    margin-bottom:2px;
+    font-weight:bold;
+    -webkit-transition: all .2s ease-in-out;
+    border-bottom:1px solid black;
+    text-align:left;
+    width:200px;
+}
+.navigation li:hover,
+.active {
+    font-size:25px;
+    cursor:pointer;
+    width:200px!important;
+}
+
+.side_bar {
+  width: 200px;
+}
+
+ion-content .scroll, ion-content .scroll canvas:not(.qrcode){
+  height: 100%!important;
+}
+
+.qrcode {
+  margin-left: 10px;
+}
